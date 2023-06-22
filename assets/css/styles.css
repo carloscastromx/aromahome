@@ -46,7 +46,8 @@ header .container{
 }
 .hero-home{
     background-image: url(../img/aroma-home-homepage-banner.png);
-    background-size: contain;
+    background-size: cover;
+    background-position: center center;
     min-height: 600px;
     display: flex;
     align-items: flex-end;
@@ -257,4 +258,62 @@ footer .footer-column-2 .social-media-icons i{
 }
 .copyright .container a:first-of-type{
     margin: 10px 0;
+}
+@media screen and (max-width: 1175px){
+    .logo{
+        width: 30%;
+        display: flex;
+        justify-content: center;
+    }
+    .menu-container{
+        width: 70%;
+    }
+    header nav{
+        display: flex;
+    }
+}
+@media screen and (max-width: 867px){
+    header .container{
+        flex-direction: column;
+        gap: 30px;
+    }
+    .menu-container{
+        width: 90%;
+    }
+    .hero-home{
+        background-position: center right;
+    }
+
+}
+@media screen and (max-width: 720px){
+    header nav{
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+    }
+    header .logo{
+        max-width: 200px;
+        min-width: 200px;
+    }
+    header .logo img{
+        width: 100%;
+    }
+    .hero-home{
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-color: #b6daf2;
+    }
+}
+@media screen and (max-width: 960px){
+    .hero-home{
+        min-height: 60vh;
+    }
+}
+@media screen and (max-width: 530px){
+    .hero-home{
+        min-height: 250px;
+    }
+    .home-cta{
+        margin-bottom: 25px;
+    }
 }
